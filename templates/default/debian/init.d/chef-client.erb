@@ -22,6 +22,8 @@ PIDFILE=<%= node["chef_client"]["run_path"] %>/client.pid
 
 test -x $DAEMON || exit 1
 
+/usr/local/rvm/environments/default
+
 . /lib/lsb/init-functions
 
 [ -r /etc/default/$NAME ] && . /etc/default/$NAME
